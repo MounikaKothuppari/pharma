@@ -1,0 +1,45 @@
+$theme-colors: (
+  'primary': #4a667b,
+  'success': #00a990,
+  'info': #0faedf,
+  'warning': #e99518,
+  'warning-light': #fff1d9,
+  'secondary-light': #e1e5e5,
+  'black': #000,
+  'danger': #004c9d,
+  'green': #42b85d,
+  'red': #f93232,
+  'teal': #29ced4,
+  'red-light': #fddfdf,
+  'info-light': #f3f9ff,
+  'success-light': #dffbdc,
+  'dark': #4e4e4e,
+  'dark-light': #bfc7cd,
+  'purple': purple,
+  'blue': #605dec,
+  'primary-blue': #024c9d,
+  'blue-light': #e5e5ff,
+  'primary-light': #dbe5f0,
+  't-primary': #4a667b,
+  't-primary-light': #e1e4e8,
+  't-border': #c9d6df,
+  'white': #fff,
+  'yellow': #ffd48c,
+);
+@import '~toastr/build/toastr.min.css';
+@import '~font-awesome/css/font-awesome.css';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import '~vue2-daterange-picker/dist/vue2-daterange-picker.css';
+@import './font-families.scss';
+@import './utils.scss';
+html, body {
+  height: 100% !important;
+}
+.auth-bg {
+  position: relative;
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
