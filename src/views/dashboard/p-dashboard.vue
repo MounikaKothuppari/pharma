@@ -9,27 +9,18 @@
       <div class="d-flex w-100">
         <div :style="{ width: sidebarStyle.width }" class="sidebar-css">
           <b-nav vertical class="nav-sidebar">
-            <b-nav-item active-class="active-nav">
+            <b-nav-item active-class="active-nav" @click="$changeRoute({
+        name: 'p-d-sample-table',
+      })">
               <div class="fs-22 d-inline-block width-3 ml-5"> <i class="fa fa-link"></i></div>
               <div class="d-inline-block fw-600 ls-5" v-if="!minSidebar">Integration</div>
             </b-nav-item>
 
           </b-nav>
         </div>
-        <b-container class="text-center w-100">
-          <b-row class="dashboard-cards">
-            <b-col class="col-4">
-
-              <div class="custom-card cursor-pointer m-5" style="height:95%;">
-                <div class="card-content text-center">
-                  <i class="fa fa-link"></i>
-                  <div class="line"></div>
-                  <div class="card-title text-center fw-600 ls-4">Integration</div>
-                </div>
-              </div>
-            </b-col>
-
-          </b-row>
+        <b-container class="text-center bg-white p-10 border-box-radius mx-10" fluid
+          :style="{ width: '84% !important' }">
+          <router-view></router-view>
         </b-container>
       </div>
     </b-container>
