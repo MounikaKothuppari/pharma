@@ -43,7 +43,7 @@ export default {
         if (result) {
           if (this.username === 'pharma' && this.password === 'pharma') {
             this.$changeRoute({
-              name: 'dashboard',
+              name: 'p-d-cards',
             });
           }
         }

@@ -40,7 +40,7 @@ const routes = [
   {
     path: '/',
     redirect: {
-      name: 'dashboard',
+      name: 'login',
     },
   },
 ];
